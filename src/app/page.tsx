@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 export default function Home() {
   return (
     <main>
-       <Button>Hello</Button>
+       <Button>Hello o o o o</Button>
        <ButtonWithIcon Icon={<FaArrowRightLong />}>ButtonWithIcon</ButtonWithIcon>
     </main>
   )
