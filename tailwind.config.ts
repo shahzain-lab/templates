@@ -45,6 +45,10 @@ const config: Config = {
           main: '#22c55e',
           beta: '#333',
         },
+        orange: {
+          main: '#ff8057',
+          beta: '#333',
+        },
       }
     },
   },
