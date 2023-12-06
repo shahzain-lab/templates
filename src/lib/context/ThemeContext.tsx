@@ -1,4 +1,5 @@
-import { createContext, useState, useContext, ReactNode } from 'react';
+import React from "react";
+import { createContext, useState, useContext, ReactNode } from "react";
 
 type ITheme = "gray" | "light" | "green" | "orange";
 type ThemeContextType = {
@@ -13,7 +14,7 @@ type ThemeProviderProps = {
 };
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<ITheme>('light');
+  const [theme, setTheme] = useState<ITheme>("light");
 
   const changeTheme = (newTheme: ITheme) => {
     setTheme(newTheme);
@@ -29,7 +30,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 export const useTheme = (): ThemeContextType => {
   const context = useContext(ThemeContext);
   if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+    throw new Error("useTheme must be used within a ThemeProvider");
   }
   return context;
 };

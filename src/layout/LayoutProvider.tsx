@@ -1,19 +1,19 @@
-'use client'
-import Footer from '@/components/footer/Footer'
-import Header from '@/components/header/Header'
-import { ThemeProvider } from '@/lib/context/ThemeContext'
-import React from 'react'
-import ThemeSwitcher from './ThemeSwitcher'
+"use client";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+import { ThemeProvider } from "@/lib/context/ThemeContext";
+import React from "react";
+import Announcement from "@/components/header/Announcement";
 
 const LayoutProvider = ({ children }: React.PropsWithChildren) => {
   return (
     <ThemeProvider>
-        <Header />
-          {children}
-          <ThemeSwitcher />
-        <Footer />
+      <Announcement />
+      <Header />
+      {children}
+      <Footer />
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default LayoutProvider
+export default LayoutProvider;
