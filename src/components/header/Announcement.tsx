@@ -3,13 +3,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaXTwitter,
-} from "react-icons/fa6";
-import Link from "next/link";
+import Social from "@/shared/Social";
 
 const Announcement = () => {
   const { theme } = useTheme();
@@ -30,22 +24,7 @@ const Announcement = () => {
           contact@molti.com
         </span>
       </div>
-      <div
-        className={`text-white flex items-center gap-3 font-bold text-[20px]`}
-      >
-        <Link href={"#"}>
-          <FaFacebookF />
-        </Link>
-        <Link href={"#"}>
-          <FaXTwitter />
-        </Link>
-        <Link href={"#"}>
-          <FaInstagram />
-        </Link>
-        <Link href={"#"}>
-          <FaGithub />
-        </Link>
-      </div>
+      <Social />
     </div>
   );
 };

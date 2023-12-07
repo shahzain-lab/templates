@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import ChildItem from "./ChildItem";
+import { MENU_ITEMS } from "./menuItems";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -9,19 +11,20 @@ const Navbar = () => {
         className={`px-10 flex flex-wrap items-center justify-between mx-auto p-4`}
       >
         <Link
-          href="https://flowbite.com/"
+          href="/"
           className={`items-center flex md:hidden space-x-3 rtl:space-x-reverse`}
         >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className={`h-8`}
-            alt="Flowbite Logo"
+          <Image
+            src={"/assets/png/Molti-Logo.png"}
+            alt=""
+            width={100}
+            height={100}
           />
-          <span
+          {/* <span
             className={`self-center text-2xl font-semibold whitespace-nowrap dark:text-white`}
           >
-            Flowbite
-          </span>
+            Rizel
+          </span> */}
         </Link>
         <div className={`flex md:order-2`}>
           <button
@@ -103,22 +106,22 @@ const Navbar = () => {
         </div>
         <div
           className={`items-center md:gap-14 justify-between hidden w-full md:flex md:w-auto md:order-1`}
-          id="navbar-search"
         >
           <Link
-            href="https://flowbite.com/"
-            className={`md:flex hidden items-center space-x-3 rtl:space-x-reverse`}
+            href="/"
+            className={`items-center md:flex hidden space-x-3 rtl:space-x-reverse`}
           >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className={`h-8`}
-              alt="Flowbite Logo"
+            <Image
+              src={"/assets/png/Molti-Logo.png"}
+              alt=""
+              width={124}
+              height={124}
             />
-            <span
-              className={`self-center text-2xl font-semibold whitespace-nowrap dark:text-white`}
-            >
-              Flowbite
-            </span>
+            {/* <span
+            className={`self-center text-2xl font-semibold whitespace-nowrap dark:text-white`}
+          >
+            Rizel
+          </span> */}
           </Link>
           <div className={`relative mt-3 md:hidden`}>
             <div
@@ -150,15 +153,11 @@ const Navbar = () => {
           <ul
             className={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
           >
-            <li>
-              <ChildItem />
-            </li>
-            <li>
-              <ChildItem href="#" />
-            </li>
-            <li>
-              <ChildItem href="#" />
-            </li>
+            {MENU_ITEMS.map((item, i) => (
+              <li key={i}>
+                <ChildItem menu={item} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
