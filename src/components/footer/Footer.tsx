@@ -22,19 +22,19 @@ const Footer = () => {
     {
       title: "sit amet consectetur adipisicing elit. Rerum, rem.",
       path: "#",
-      media: "/assets/png/news/christmas.png",
+      media: "/assets/home/news/christmas.png",
       publishedAt: "Nov 19, 2023",
     },
     {
       title: "Non nulla maiores est explicabo perspiciatis ipsam?",
       path: "#",
-      media: "/assets/png/news/countertop.png",
+      media: "/assets/home/news/countertop.png",
       publishedAt: "Jan 01, 2024",
     },
     {
       title: "Lorem, ipsum dolor sit amet consectetur adipisicing.",
       path: "#",
-      media: "/assets/png/news/halloween.png",
+      media: "/assets/home/news/halloween.png",
       publishedAt: "Dec 21, 2023",
     },
   ];

@@ -12,7 +12,7 @@ interface ButtonWithIconProps
 }
 
 const ButtonWithIcon = React.forwardRef<HTMLButtonElement, ButtonWithIconProps>(
-  ({ children, Icon, placement = "left", ...props }, ref) => {
+  ({ children, Icon, placement = "right", ...props }, ref) => {
     return (
       <Button {...props} ref={ref}>
         {placement === "left" && <span className="mr-1">{Icon}</span>}

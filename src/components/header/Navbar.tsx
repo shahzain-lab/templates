@@ -15,7 +15,7 @@ const Navbar = () => {
           className={`items-center flex md:hidden space-x-3 rtl:space-x-reverse`}
         >
           <Image
-            src={"/assets/png/Molti-Logo.png"}
+            src={"/assets/home/Molti-Logo.png"}
             alt=""
             width={100}
             height={100}
@@ -112,7 +112,7 @@ const Navbar = () => {
             className={`items-center md:flex hidden space-x-3 rtl:space-x-reverse`}
           >
             <Image
-              src={"/assets/png/Molti-Logo.png"}
+              src={"/assets/home/Molti-Logo.png"}
               alt=""
               width={124}
               height={124}

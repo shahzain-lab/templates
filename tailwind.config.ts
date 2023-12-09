@@ -5,6 +5,7 @@ const expandColors = {
     light: '#fff',
     dark: '#000',
     depty: '#032760',
+    alpha: '#ff80571c'
   },
   alpha: {
     gray: '#3f3f3f',
@@ -14,6 +15,7 @@ const expandColors = {
     main: '#ff8057',
     depty: '#032760',
     beta: '#333',
+    alpha: '#ff80571c'
   },
   gray: {
     main: '#ff8057',
