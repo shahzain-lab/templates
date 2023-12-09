@@ -3,6 +3,7 @@ import React from "react";
 import { LuExternalLink } from "react-icons/lu";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -26,7 +27,11 @@ const Hero = () => {
           powerful features.
         </p>
         <div className="flex items-center gap-3 my-10">
-          <ButtonWithIcon Icon={<FaArrowRightLong />}>Services</ButtonWithIcon>
+          <Link href={"/services"}>
+            <ButtonWithIcon Icon={<FaArrowRightLong />}>
+              Services
+            </ButtonWithIcon>
+          </Link>
           <ButtonWithIcon
             Icon={<FaArrowRightLong />}
             className="border border-light-main text-light-main"
